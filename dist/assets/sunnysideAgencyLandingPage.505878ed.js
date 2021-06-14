@@ -1,0 +1,1 @@
+/* empty css                 */const e=document.getElementById("burger"),t=document.getElementById("mobileMenu");e.addEventListener("click",(function(){document.body.classList.toggle("open"),t.classList.toggle("hidden")}));

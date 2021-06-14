@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+   scroll-behavior: smooth;
+}
+
+a.project-menu:hover div {
+   @apply w-full bg-opacity-40 ease-in-out duration-300;
+}
+
+/* burger toggle style */
+
+#burger span{
+   transform-origin: 1px 1px;
+   transition: transform 300ms ease-in-out;
+}
+
+.open #burger span:first-child {
+   transform: rotate(45deg);
+}
+
+.open #burger span:nth-child(2) {
+   opacity: 0;
+}
+
+.open #burger span:last-child {
+   transform: rotate(-45deg);
+}
+
+@layer components {
+
+    /** Sunnyside agency landing page */
+    .sunnyside-mobile-menu::after{
+      content: '';
+      position: absolute;
+      top:-40px;
+      right:-13px;
+      /* border: 4px solid rgb(219, 10, 10); */
+      border-top: 21px solid transparent;
+      border-right: 21px solid transparent;
+      border-bottom: 21px solid transparent;
+      border-left: 21px solid #fff;
+
+      transform-origin: bottom left;
+      transform: rotate(45deg);
+   }
+
+   /* .sunnyside-mobile-hero {
+      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-header.jpg);
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+   } */
+
+   /* @media (min-width: 570px) {
+      .sunnyside-mobile-hero {
+         background-image: url(/sunnyside-agency-landing-page/images/desktop/image-header.jpg);
+      }
+   } */
+
+   /* .open #mobileMenu {
+      
+   } */
+
+
+   .graphic-design {
+      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-graphic-design.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+   }
+
+   .photography-mobile {
+      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-photography.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+ 
+}
+
