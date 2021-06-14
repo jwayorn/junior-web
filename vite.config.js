@@ -10,6 +10,7 @@ module.exports = {
          input: {
             main: resolve(__dirname, 'src/index.html'),
             sunnysideAgencyLandingPage: resolve(__dirname, 'src/sunnyside-agency-landing-page/index.html'),
+            blogrLandingPage: resolve(__dirname, 'src/blogr-landing-page/index.html'),
             
          }
       }
