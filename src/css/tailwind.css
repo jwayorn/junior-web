@@ -12,8 +12,13 @@ a.project-menu:hover div {
 
 /* burger toggle style */
 
-#burger span{
+#burger.sunnyside span{
    transform-origin: 1px 1px;
+   transition: transform 300ms ease-in-out;
+}
+
+#burger.blogr span{
+   transform-origin: 5px 3px;
    transition: transform 300ms ease-in-out;
 }
 
@@ -47,37 +52,11 @@ a.project-menu:hover div {
       transform: rotate(45deg);
    }
 
-   /* .sunnyside-mobile-hero {
-      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-header.jpg);
 
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-   } */
+   /** Blogr */
+   
 
-   /* @media (min-width: 570px) {
-      .sunnyside-mobile-hero {
-         background-image: url(/sunnyside-agency-landing-page/images/desktop/image-header.jpg);
-      }
-   } */
+   .gradient-body{}
 
-   /* .open #mobileMenu {
-      
-   } */
-
-
-   .graphic-design {
-      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-graphic-design.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-
-   }
-
-   .photography-mobile {
-      background-image: url(/sunnyside-agency-landing-page/images/mobile/image-photography.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-   }
- 
 }
 

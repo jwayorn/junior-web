@@ -5,6 +5,8 @@ module.exports = {
     fontFamily:{
       'barlow': ['Barlow', 'sans-serif'],
       'fraunces': ['Fraunces', 'serif'],
+      'overpass': ['Overpass', 'sans-serif'],
+      'ubuntu': ['Ubuntu', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -13,6 +15,7 @@ module.exports = {
         'sunnyside-mobile': '570px',
       },
       colors:{
+        /** Sunnyside */
         'sunnyside-soft-red': 'hsl(7, 99%, 70%)',
         'sunnyside-yellow': 'hsl(51, 100%, 49%)',
         'sunnyside-d-desaturated-cyan': 'hsl(167, 40%, 24%)',
@@ -24,10 +27,19 @@ module.exports = {
         'sunnyside-grayish-blue': 'hsl(210, 4%, 67%)',
         'sunnyside-white': 'hsl(0, 0%, 100%)',
 
+        /** Blogr */
+        'blogr-l-red': 'hsl(356, 100%, 66%)',
+        'blogr-vl-red': 'hsl(355, 100%, 74%)',
+        'blogr-vd-blue': 'hsl(208, 49%, 24%)',
+        'blogr-grayish-blue': 'hsl(240, 2%, 79%)',
+        'blogr-vd-grayish-blue': 'hsl(207, 13%, 34%)',
+        'blogr-vd-grayish-blue': 'hsl(240, 10%, 16%)',
+
       },
       fontSize: {
         'xxs': '0.8125rem', //13px
         '2tiny': '0.9375rem', // 15px
+        '2rem': '2rem', // 32px
       },
       maxWidth:{
         'mobile': '23.4375rem',
@@ -38,14 +50,21 @@ module.exports = {
         'desktop': '90rem',
       },
       width: {
+        '41.25': '10.3125rem', //165px
+        '37.25': '9.3125rem', //165px
       },
       height: {
         'screen-70': '70vh',
         'screen-80': '80vh',
+        '17.25': '4.3125rem', // 69px
+        '13.25': '3.3125', // 53px
       },
       margin: {
       },
       spacing:{
+        '27.5': '6.875rem',  // 110px
+        '57.5': '14.375rem', // 230px
+        '104': '26rem', // 416px
         '128': '32rem',
         '160': '40rem',
         '134.5': '33.625rem',
@@ -58,7 +77,9 @@ module.exports = {
       letterSpacing: {
         'widest-2': '0.2em',
       },
-      backgroundPosition: {
+      borderRadius:{
+        '8.5': '8.5rem',
+        '7.5': '7.5rem',
       },
       backgroundImage: theme => ({
         'sunnyside-m-header':"url('/sunnyside-agency-landing-page/images/mobile/image-header.jpg')",
@@ -75,12 +96,15 @@ module.exports = {
         'sunnyside-d-graphic-design':"url('/sunnyside-agency-landing-page/images/desktop/image-graphic-design.jpg')",
         'sunnyside-m-photography':"url('/sunnyside-agency-landing-page/images/mobile/image-photography.jpg')",
         'sunnyside-d-photography':"url('/sunnyside-agency-landing-page/images/desktop/image-photography.jpg')",
+      
       }),
 
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover'],
+    },
   },
   plugins: [],
 }
