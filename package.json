@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite src --base /junior-web/",
+    "dev": "vite -c vite.config.js",
     "build": "vite build",
     "serve": "vite preview"
   },
+  "dependencies": {
+    "vue": "^3.1.1"
+  },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.1.1",
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.2",
+    "tailwindcss": "^2.2.2",
     "vite": "^2.3.4"
   }
 }

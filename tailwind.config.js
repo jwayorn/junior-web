@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'],
+  purge: ['./src/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}',],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily:{
@@ -7,6 +7,7 @@ module.exports = {
       'fraunces': ['Fraunces', 'serif'],
       'overpass': ['Overpass', 'sans-serif'],
       'ubuntu': ['Ubuntu', 'sans-serif'],
+      'commissioner': ['Commissioner', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -35,6 +36,10 @@ module.exports = {
         'blogr-vd-grayish-blue': 'hsl(207, 13%, 34%)',
         'blogr-vd-grayish-blue': 'hsl(240, 10%, 16%)',
 
+        // Crowdfinding product page
+        'crowd-moderate-cyan': 'hsl(176, 50%, 47%)',
+        'crowd-d-cyan': 'hsl(176, 72%, 28%)',
+        'crowd-d-gray': 'hsl(0, 0%, 48%)',
       },
       fontSize: {
         'xxs': '0.8125rem', //13px
@@ -54,6 +59,7 @@ module.exports = {
         '37.25': '9.3125rem', //165px
       },
       height: {
+        
         'screen-70': '70vh',
         'screen-80': '80vh',
         '17.25': '4.3125rem', // 69px
@@ -97,7 +103,7 @@ module.exports = {
         'sunnyside-d-graphic-design':"url('/sunnyside-agency-landing-page/images/desktop/image-graphic-design.jpg')",
         'sunnyside-m-photography':"url('/sunnyside-agency-landing-page/images/mobile/image-photography.jpg')",
         'sunnyside-d-photography':"url('/sunnyside-agency-landing-page/images/desktop/image-photography.jpg')",
-      
+
       }),
 
     },

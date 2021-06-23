@@ -1,0 +1,1 @@
+/* empty css                 */import{o as e,c as t,a as n}from"./vendor.66deb3ad.js";const o={name:"App"},r={class:"text-5xl text-green-800"};o.render=function(n,o,a,s,p,d){return e(),t("h1",r,"Hellow vue work")},n(o).mount("#app");
